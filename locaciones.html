@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Diseño y nuevos medios, segunda versión remota" />
+        <title>EVALUACIÓN Nº2 &#127909;</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <p><a href="index.html">Portada</a> <a href="peliculas.html">Películas</a> <a href="locaciones.html" class="active">Locaciones</a> <a href="ganancias.html">Ganancias</a></p>
+            </nav>
+            <main>
+                <div id="mapa">
+                    <!--acá se mete el mapa-->
+                </div>
+            </main>
+            <footer>
+                <p><a href="https://github.com/cpmontero">Constanza Montero</a> <a href="https://github.com/cpmontero/dno_nuevosmedios_clase6">DNO037</a></p>
+            </footer>
+        </div>
+<script>
+    var mymap = L.map('mapa').setView([33.5427796,9.9672612], 2);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        maxZoom: 18,
+        id: 'mapbox/dark-v10',
+        tileSize: 512,
+        zoomOffset: -1
+    }).addTo(mymap);
+    L.marker([29.3944861,110.4483935]).addTo(mymap).bindPopup("Avatar.");
+    L.marker([33.8289243,-84.3793723]).addTo(mymap).bindPopup("Avengers: Endgame");
+    L.marker([31.8173387,-116.6601192]).addTo(mymap).bindPopup("Titanic");
+    L.marker([24.3374862,51.7110798]).addTo(mymap).bindPopup("Star Wars: Episode VII, El despertar de la Fuerza");
+    L.marker([40.5751972,-74.2505190]).addTo(mymap).bindPopup("Avengers: Infinity War");
+    L.marker([21.5188619,-107.976412]).addTo(mymap).bindPopup("Jurassic World");
+    L.marker([30.4408341,-117.976412]).addTo(mymap).bindPopup("El Rey León");
+    L.marker([40.5751972,-74.2505138]).addTo(mymap).bindPopup("Avengers");
+    L.marker([23.9863115,54.7091456]).addTo(mymap).bindPopup("Fast and Furious 7");
+    L.marker([30.4408341,-117.976412]).addTo(mymap).bindPopup("Frozen II");
+</script>
+    </body>
+</html>
