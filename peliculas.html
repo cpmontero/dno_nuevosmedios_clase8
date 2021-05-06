@@ -26,8 +26,8 @@
                 header: true,
                 dynamicTyping: true,
                 complete: function (respuesta) {
-                    var peliculas2 = respuesta.data;
-                    var peliculas = peliculas2.pop();
+                    var peliculas = respuesta.data;
+                    peliculas.pop();
                     console.log(peliculas);
                     
                     peliculas.forEach(function(pelicula,i){
