@@ -32,16 +32,76 @@
         tileSize: 512,
         zoomOffset: -1
     }).addTo(mymap);
-    L.marker([29.3944861,110.4483935]).addTo(mymap).bindPopup("Avatar.");
-    L.marker([33.8289243,-84.3793723]).addTo(mymap).bindPopup("Avengers: Endgame");
-    L.marker([31.8173387,-116.6601192]).addTo(mymap).bindPopup("Titanic");
-    L.marker([24.3374862,51.7110798]).addTo(mymap).bindPopup("Star Wars: Episode VII, El despertar de la Fuerza");
-    L.marker([40.5751972,-74.2505190]).addTo(mymap).bindPopup("Avengers: Infinity War");
-    L.marker([21.5188619,-107.976412]).addTo(mymap).bindPopup("Jurassic World");
-    L.marker([30.4408341,-117.976412]).addTo(mymap).bindPopup("El Rey León");
-    L.marker([40.5751972,-74.2505138]).addTo(mymap).bindPopup("Avengers");
-    L.marker([23.9863115,54.7091456]).addTo(mymap).bindPopup("Fast and Furious 7");
-    L.marker([30.4408341,-117.976412]).addTo(mymap).bindPopup("Frozen II");
+
+    var avatar = L.icon({
+                    iconUrl: 'images/1avatar.png',
+                    iconSize:     [20, 30], // size of the icon
+                    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+});
+    L.marker([29.3944861,110.4483935], {icon: avatar}).addTo(mymap).bindPopup("Avatar");
+
+    var avengersend = L.icon({
+                    iconUrl: 'images/2avengers_endagme.jpeg',
+                    iconSize:     [20, 30], // size of the icon
+                    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+});
+    L.marker([33.8289243,-84.3793723], {icon: avengersend}).addTo(mymap).bindPopup("Avengers Endgame");
+
+  var titanic = L.icon({
+                    iconUrl: 'images/3titanic.jpeg',
+                    iconSize:     [20, 30], // size of the icon
+                    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+});
+    L.marker([31.8173387,-116.6601192], {icon: titanic}).addTo(mymap).bindPopup("Titanic");
+
+  var starwarsvii = L.icon({
+                    iconUrl: 'images/4star_wars_vii.jpeg',
+                    iconSize:     [20, 30], // size of the icon
+                    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+});
+    L.marker([24.3374862,51.7110798], {icon: starwarsvii}).addTo(mymap).bindPopup("Star Wars VII");
+
+    var infinitywar = L.icon({
+                    iconUrl: 'images/5avengers_infinitywar.jpg',
+                    iconSize:     [20, 30], // size of the icon
+                    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+});
+    L.marker([40.5751972,-74.2505190], {icon: infinitywar}).addTo(mymap).bindPopup("Avengers: Infinity War");
+
+    var jurassic = L.icon({
+                    iconUrl: 'images/6jurassic_world.jpeg',
+                    iconSize:     [20, 30], // size of the icon
+                    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+});
+    L.marker([21.5188619,-107.976412], {icon: jurassic}).addTo(mymap).bindPopup("Jurassic World");
+
+     var leon = L.icon({
+                    iconUrl: 'images/7elreyleon.jpg',
+                    iconSize:     [20, 30], // size of the icon
+                    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+});
+    L.marker([30.4408341,-117.976412], {icon: leon}).addTo(mymap).bindPopup("El Rey León");
+
+     var avengers = L.icon({
+                    iconUrl: 'images/8avengers.png',
+                    iconSize:     [20, 30], // size of the icon
+                    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+});
+    L.marker([40.5751972,-74.2505138], {icon: avengers}).addTo(mymap).bindPopup("Avengers");
+
+     var furious = L.icon({
+                    iconUrl: 'images/9furious7.jpeg',
+                    iconSize:     [20, 30], // size of the icon
+                    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+});
+    L.marker([23.9863115,54.7091456], {icon: furious}).addTo(mymap).bindPopup("Fast and Furious 7");
+
+    var frozen = L.icon({
+                    iconUrl: 'images/10frozen2.png',
+                    iconSize:     [20, 30], // size of the icon
+                    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+});
+    L.marker([26.4408341,-117.976412], {icon: frozen}).addTo(mymap).bindPopup("Frozen II");
 </script>
     </body>
 </html>
